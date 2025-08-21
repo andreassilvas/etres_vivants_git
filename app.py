@@ -2,7 +2,7 @@
 Module d'interface graphique pour la création et la gestion
 des êtres vivants (Animal et Plante) avec Tkinter.
 Fournit les fonctions pour créer, afficher et gérer les
-champs de saisie, boutons et labels dans la fenêtre principale.
+champs de saisie, bouton et label dans la fenêtre principale.
 """
 import tkinter as tk
 from tkinter import messagebox
