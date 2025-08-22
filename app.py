@@ -19,7 +19,7 @@ from style_config import (
 # DONNÉES D'EXEMPLE
 # ===================
 etre_vivants = [
-    Animal("Lion", 20, "Mammifère", "Carnivore"),
+    Animal("Lion", 15, "Mammifère", "Carnivore"),
     Animal("Perroquet", 10, "Oiseau", "Herbivore"),
     Plante("Lotus", 8, "Large", "Argentée"),
     Plante("Aloe", 15, "Épineuse", "Jaune"),
