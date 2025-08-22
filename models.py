@@ -75,15 +75,6 @@ class Animal(EtreVivant):
         self.nourriture = nourriture
     def se_nourrir(self):
         return f"{self.nom}, Cet animal suit un régime {self.nourriture}."
-    def emettre_son(self):
-        """Produit un son spécifique selon le genre de l'animal."""
-        sons = {
-            "Insecte géant": "Bzzz...!",
-            "Amphibien": "Croa croa!",
-            "Créature marine": "Glouuu glou!"
-        }
-        print(sons.get(self.especes, "Ce genre reste silencieux."))
-
     def __str__(self):
         return f"{super().__str__()}, Espèces: {self.especes}, Se nourrir: {self.nourriture}"
 
@@ -97,15 +88,6 @@ class Plante(EtreVivant):
         self.type_feuille = type_feuille
         self.couleur_fleur = couleur_fleur
     def se_nourrir(self) -> str:
-        return f"{self.nom}, Cette plante produit son énergie grâce à la lumière et à l'eau."
-    def besoin_eau(self):
-        """Indique les besoins en arrosage selon le type de feuille."""
-        if self.type_feuille.lower() == "épineuse":
-            print("Arrosage rare, adapté aux milieux arides.")
-        elif self.type_feuille.lower() == "large":
-            print("Besoins élevés en eau, surtout en période chaude.")
-        else:
-            print("Besoins en eau variables, à observer selon la saison.")
-              
+        return f"{self.nom}, Cette plante produit son énergie grâce à la lumière et à l'eau."              
     def __str__(self) -> str:
         return f"{super().__str__()}, Type de feuille: {self.type_feuille}, Couleur de fleur: {self.couleur_fleur}"

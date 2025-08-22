@@ -93,6 +93,8 @@ def creer_etre_vivant():
     # Vérification : l’âge doit être un entier
     try:
         age = int(values["Âge"])
+        if age <= 0:
+            messagebox.showerror("Erreur", "L'âge doit être supérieur à 0.")    
     except ValueError:
         messagebox.showerror("Erreur", "L'âge doit être un nombre entier.")
         return
