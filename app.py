@@ -20,7 +20,7 @@ from style_config import (
 # ===================
 etre_vivants = [
     Animal("Lion", 15, "Mammifère", "Carnivore"),
-    Animal("Perroquet", 15, "Oiseau", "Herbivore"),
+    Animal("Perroquet", 10, "Oiseau", "Herbivore"),
     Plante("Lotus", 8, "Large", "Argentée"),
     Plante("Aloe", 15, "Épineuse", "Jaune"),
 ]
